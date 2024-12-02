@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>co2 emission</title>
+        <style>
+            #heading
+            {
+                color: darkred;
+            }
+            ul{
+            list-style-type: none;
+            color:azure;
+            text-decoration: none;
+        }
+        a:link
+        {
+            text-decoration: none;
+            color: azure;
+        }
+        .navi
+        {
+             display: flex;
+             text-align: center;
+             position:fixed ;
+             background-color: black;
+             color:azure;
+             width: 100%;
+        }
+        li a:hover{
+            background-color: red;
+        }
+        #l1,#l2,#l3,#l4,#l5,#l6,#l7
+        {
+            padding-right: 20px;
+            margin-left: 30%;
+        }
+        h3{
+            padding-left: 40%;
+        }
+        #t1
+        {
+           
+            margin-left:12%;
+        }
+        #t2
+        {
+            margin-left: 12%;
+        }
+        #t3
+        {
+            margin-left: 12%;
+            
+        }
+        #t4
+        {
+            margin-left: 12%;
+        }
+        #t5{
+            margin-left:0%;
+        }
+        #t6
+        {
+            margin-left: 0%;
+            
+        }
+        #t7
+        {
+            margin-left: 0%;
+            
+        }
+
+        #btn
+        {
+            margin-left:5%;
+            padding-left: 2%;
+            background-color: green;
+            color: azure;
+            height: 7%;
+            width: 15%;
+            text-align: center;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div class="top">
+        <center><h1 id="heading">CO2 EMISSION PREDICTION</h1></center></div>
+        <div class="navi" >
+            <ul>
+                <li>
+                    <a href="home.html" style="color: azure;">HOME</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="result.html" style="color: azure;">PREDICTION</a>
+                </li>
+            </ul>
+            <!--<ul>
+                <li>
+                    <a href="suggest.html" style="color: azure;">SUGGESTION</a>
+                </li>
+            </ul>-->
+    </div><br><br><br><br>
+    
+        <div class="form">
+            
+            
+                <h3>Fill Out The Details</h3>
+            <center>
+                <form action='result'> 
+                    Model :<input type="number" name="model" id="t1" required><br><br>
+                    Engine Size :<input type="number" name="size" id="t2" required><br><br>        
+                    Cylinder :<input type="number" name="cylinder" id="t3" required><br><br>
+                    Fuel type :<input type="number" name="fuel" id="t4" required><br><br>
+                    Fuel Consumption City(L/100 km) :<input type="number" name="city" id="t5" required><br><br>
+                    Fuel Consumption Hwy(L/100 km) :<input type="number" name="heavy" id="t6" required><br><br>
+                    Fuel Consumption Comb(L/100 km) :<input type="number" name="comb" id="t7" required><br><br>
+                    Fuel Consumption Comb(mpg) :<input type="number" name="combm" id="t8" required><br><br>
+                    <input type="submit" id="btn" value="PREDICT">
+                    </form></center>
+    </div>
+    </body>
+</html>

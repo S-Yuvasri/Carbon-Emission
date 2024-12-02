@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            #heading
+            {
+                color: darkred;
+            }
+            ul{
+            list-style-type: none;
+            color:azure;
+            text-decoration: none;
+        }
+        a:link
+        {
+            text-decoration: none;
+            color: azure;
+        }
+        .navi
+        {
+             display: flex;
+             text-align: center;
+             position:fixed ;
+             background-color: black;
+             color:azure;
+             width: 100%;
+        }
+        li a:hover{
+            background-color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <center><h1 id="heading">CO2 EMISSION PREDICTION</h1></center></div>
+            <div class="navi" >
+                <ul>
+                    <li>
+                        <a href="home.html" style="color: azure;">HOME</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="result.html" style="color: azure;">PREDICTION</a>
+                    </li>
+                </ul>
+                <!--<ul>
+                    <li>
+                        <a href="suggest.html" style="color: azure;">SUGGESTION</a>
+                    </li>
+                </ul>--></div><br><br><br><br>
+        <center><h1>Predicted emission value: {{ result}}</h1>
+        <h1>Suggestion :{{pred}}</h1></center>
+    </body>
+</html>
+
